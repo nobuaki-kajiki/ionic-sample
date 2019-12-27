@@ -6,9 +6,9 @@ import { Beer } from '../models/beer';
 })
 export class BeerService {
   beers: Beer[] = [
-    new Beer('1', 'malts', '最高だ', false)
-  , new Beer('2', 'kirin', '幸せだ', false)
-  , new Beer('3', 'dry', '花金だ', false)
+    new Beer('1', 'test', 'これはテストです', false)
+  , new Beer('2', 'sample', 'これはテストです', false)
+  , new Beer('3', 'テスト', 'これはテストです', false)
   ];
 
   constructor() { }

@@ -10,7 +10,7 @@
   <ion-list>
     <ion-item *ngFor="let beer of beers" routerLink="/beer-detail/{{ beer.id}}" routerDirection="forward">
       <ion-label [appHighlight]="beer.isNice">
-        {{beer.name | upper}} is {{beer.description}}
+        {{beer.name | upper}}  {{beer.description}}
         <span *ngIf="beer.isNice">○</span>
       </ion-label>
     </ion-item>
