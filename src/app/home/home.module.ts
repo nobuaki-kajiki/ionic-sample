@@ -5,9 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { AppCommonModule } from '../modules/app-common/app-common.module';
 
 @NgModule({
   imports: [
+    AppCommonModule,
     CommonModule,
     FormsModule,
     IonicModule,

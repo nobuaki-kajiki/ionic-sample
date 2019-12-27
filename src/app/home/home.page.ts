@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Beer } from '../models/beer';
+import { BeerService } from '../services/beer.service';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  name = 'world';
+  beers: Beer[];
 
-  constructor() {}
+  constructor(
+    private beerService: BeerService
+  ) {}
+
+  ngOnInit(){
+    this.beers = this.beerService.getBeers();
+  }
 
 }

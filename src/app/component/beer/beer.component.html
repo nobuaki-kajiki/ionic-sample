@@ -1,0 +1,5 @@
+<p [appHighlight]="beer.isNice">
+  {{beer.name | upper}} is {{beer.description}}
+  <span *ngIf="beer.isNice">○</span>
+</p>
+<ion-button (click)="onNice()">いいね</ion-button>

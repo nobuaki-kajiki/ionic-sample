@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>beer-detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <app-beer [beer]="beer"></app-beer>
+  <ion-item>
+    <ion-label>名前</ion-label>
+    <ion-input [(ngModel)]="beer.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>説明</ion-label>
+    <ion-input [(ngModel)]="beer.description"></ion-input>
+  </ion-item>
+
+</ion-content>
